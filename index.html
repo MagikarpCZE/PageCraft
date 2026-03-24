@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO ===================== -->
+  <title>PageCraft.cz — Tvorba webových stránek na míru | Webdesign</title>
+  <meta name="description" content="Tvoříme profesionální webové stránky na míru pro živnostníky a malé firmy. Čistý design, rychlé weby, férové ceny. Kontaktujte nás ještě dnes." />
+  <meta name="keywords" content="tvorba webových stránek, webdesign, web na míru, webové stránky pro firmy, web pro živnostníka, PageCraft" />
+  <meta name="author" content="PageCraft.cz" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pagecraft.cz/" />
+
+  <!-- ===================== Open Graph (Facebook, LinkedIn, sdílení) ===================== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pagecraft.cz/" />
+  <meta property="og:title" content="PageCraft.cz — Tvorba webových stránek na míru" />
+  <meta property="og:description" content="Tvoříme profesionální webové stránky na míru pro živnostníky a malé firmy. Čistý design, rychlé weby, férové ceny." />
+  <meta property="og:image" content="https://pagecraft.cz/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="PageCraft.cz" />
+
+  <!-- ===================== Twitter Card ===================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PageCraft.cz — Tvorba webových stránek na míru" />
+  <meta name="twitter:description" content="Tvoříme profesionální webové stránky na míru pro živnostníky a malé firmy." />
+  <meta name="twitter:image" content="https://pagecraft.cz/img/og-image.png" />
+
+  <!-- ===================== Google Analytics ===================== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDFLN0LZPB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WDFLN0LZPB');
+  </script>
+
+  <!-- ===================== Výkon ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">
+        <img src="favicon.svg" alt="" class="navbar__logo-icon" aria-hidden="true" width="24" height="24" />
+        <span>PageCraft<span class="logo-dot">.cz</span></span>
+      </a>
+      <button class="navbar__burger" id="navBurger" aria-label="Otevřít menu" aria-expanded="false" data-i18n-aria="burger-aria">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#o-nas" class="navbar__link" data-i18n="nav-about">O nás</a>
+        <a href="#postup" class="navbar__link" data-i18n="nav-process">Postup spolupráce</a>
+        <a href="#portfolio" class="navbar__link" data-i18n="nav-portfolio">Portfolio</a>
+        <a href="#kontakt" class="navbar__link navbar__link--cta" data-i18n="nav-contact">Kontakt</a>
+      </nav>
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn lang-btn--active" data-lang="cs" onclick="window.applyLang&&window.applyLang('cs')">CS</button>
+        <button class="lang-btn" data-lang="en" onclick="window.applyLang&&window.applyLang('en')">EN</button>
+        <button class="lang-btn" data-lang="de" onclick="window.applyLang&&window.applyLang('de')">DE</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <h1 class="hero__title" data-i18n-html="hero-title">
+          Tvoříme <span class="hero__title--accent">webové stránky</span>,<br />
+          které zlepší vaší vizáž.
+        </h1>
+        <p class="hero__subtitle" data-i18n-html="hero-subtitle">
+          Navrhujeme precizní weby na míru.<br />
+          Váš úspěch stavíme na čistém designu a spolehlivosti.
+        </p>
+        <a href="#kontakt" class="hero__cta" data-i18n-html="hero-cta">Začněme spolupráci <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- O NÁS -->
+    <section class="section o-nas fade-section" id="o-nas">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title" data-i18n="about-title">O nás</h2>
+        </div>
+        <div class="o-nas__text">
+          <p data-i18n="about-p1">Podívejte se na svůj web očima nového zákazníka. Je přehledný? Důvěryhodný? Našli byste na něm snadno to, co hledáte, i na mobilu?</p>
+          <p data-i18n="about-p2">Pokud váháte, nejste sami. Mnoho úspěšných malých podniků má webové stránky, které jim už dávno neslouží. Místo aby přiváděly nové zakázky, působí nedůvěryhodně a potenciální klienty spíše odradí.</p>
+        </div>
+
+        <div class="o-nas__stats">
+          <div class="o-nas__stat">
+            <span class="o-nas__stat-number">5+</span>
+            <span class="o-nas__stat-label" data-i18n="stat-projects">Projektů dokončeno</span>
+          </div>
+          <div class="o-nas__stat">
+            <span class="o-nas__stat-number">6</span>
+            <span class="o-nas__stat-label" data-i18n="stat-years">Let zkušeností</span>
+          </div>
+          <div class="o-nas__stat">
+            <span class="o-nas__stat-number">100%</span>
+            <span class="o-nas__stat-label" data-i18n="stat-responsive">Responzivní weby</span>
+          </div>
+        </div>
+
+        <div class="section__header section__header--spaced">
+          <h3 class="section__subtitle" data-i18n="about-change">My to měníme</h3>
+        </div>
+
+        <p class="o-nas__lead" data-i18n="about-lead">Specializujeme se na revitalizaci a tvorbu webů pro živnostníky a malé firmy, které potřebují vidět výsledky bez zbytečných složitostí.</p>
+        <div class="features">
+          <div class="feature-card">
+            <span class="feature-card__num">01</span>
+            <div class="feature-card__body">
+              <h4 data-i18n="feat-1-title">Moderní design</h4>
+              <p data-i18n="feat-1-desc">Nahradíme zastaralý vzhled profesionálním designem, který buduje důvěru a zanechá trvalý dojem.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-card__num">02</span>
+            <div class="feature-card__body">
+              <h4 data-i18n="feat-2-title">Funkčnost na mobilu</h4>
+              <p data-i18n="feat-2-desc">Bezchybné zobrazení na všech zařízeních — většina zákazníků hledá právě na telefonu.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-card__num">03</span>
+            <div class="feature-card__body">
+              <h4 data-i18n="feat-3-title">Přehledná struktura</h4>
+              <p data-i18n="feat-3-desc">Zákazníci okamžitě najdou kontakt, ceník a otevírací dobu — bez zbytečného tápání.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-card__num">04</span>
+            <div class="feature-card__body">
+              <h4 data-i18n="feat-4-title">Odevzdání i správa</h4>
+              <p data-i18n="feat-4-desc">Předáme vám web, kterému rozumíte, a posléze se o něj postaráme za vás.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="postup" class="section__header section__header--spaced">
+          <h3 class="section__subtitle" data-i18n="process-title">Takto postupujeme</h3>
+        </div>
+
+        <div class="process">
+
+          <div class="process__item fade-section">
+            <div class="process__box">
+              <span class="process__num">1</span>
+              <div class="process__body">
+                <div class="process__header">
+                  <h4 class="process__title" data-i18n="proc-1-title">Ozveme se do 24 hodin</h4>
+                  <span class="process__badge process__badge--free" data-i18n="proc-1-badge">Zdarma</span>
+                </div>
+                <p class="process__desc" data-i18n="proc-1-desc">Po odeslaní vaší poptávky se vám ozvíme a domluvme první krok.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__item fade-section">
+            <div class="process__box">
+              <span class="process__num">2</span>
+              <div class="process__body">
+                <div class="process__header">
+                  <h4 class="process__title" data-i18n="proc-2-title">Probráme vaši představu</h4>
+                  <span class="process__badge process__badge--free" data-i18n="proc-2-badge">Zdarma</span>
+                </div>
+                <p class="process__desc" data-i18n="proc-2-desc">Domluvme si komunikační platformu a probereme, jak by váš web měl vypadat a co by měl stát.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__item fade-section">
+            <div class="process__box">
+              <span class="process__num">3</span>
+              <div class="process__body">
+                <div class="process__header">
+                  <h4 class="process__title" data-i18n="proc-3-title">Navrhneme hrubou šablonu</h4>
+                  <span class="process__badge process__badge--free" data-i18n="proc-3-badge">Zdarma</span>
+                </div>
+                <p class="process__desc" data-i18n="proc-3-desc">Připravíme návrh vizuální šablony webu, který vám předložíme ke schválení.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__item fade-section">
+            <div class="process__box">
+              <span class="process__num">4</span>
+              <div class="process__body">
+                <div class="process__header">
+                  <h4 class="process__title" data-i18n="proc-4-title">Zahájíme realizaci</h4>
+                  <span class="process__badge process__badge--paid">700 Kč</span>
+                </div>
+                <p class="process__desc" data-i18n="proc-4-desc">Po schválení šablony začneme pracovat na finální verzi vašeho webu.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__item fade-section">
+            <div class="process__box">
+              <span class="process__num">5</span>
+              <div class="process__body">
+                <div class="process__header">
+                  <h4 class="process__title" data-i18n="proc-5-title">Odevzdání a spuštění</h4>
+                  <span class="process__badge process__badge--paid" data-i18n="proc-5-badge">Dle nabídky</span>
+                </div>
+                <p class="process__desc" data-i18n="proc-5-desc">Finální web vám odprezentujeme a společně domluvme podmínky spuštění a případné správy.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="section portfolio fade-section" id="portfolio">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title" data-i18n="portfolio-title">Naše práce mluví za vše</h2>
+        </div>
+        <p class="portfolio__desc" data-i18n="portfolio-desc">Podívejte se na ukázky webových stránek, které jsme navrhli a vytvořili. Každý projekt je výsledkem individuálního přístupu a důrazu na funkčnost, moderní design a kvalitní kód.</p>
+
+        <div class="portfolio__list">
+
+          <article class="portfolio__item fade-section">
+            <div class="portfolio__img-wrap">
+              <a href="https://odhadceberan.cz/" target="_blank" rel="noopener noreferrer">
+                <img src="img/beran.png"
+                     alt="OdhadceBeran.cz — screenshot" class="portfolio__img" loading="lazy" />
+              </a>
+              <div class="portfolio__overlay"><span class="portfolio__overlay-tag" data-i18n="beran-overlay">Firemní web</span></div>
+            </div>
+            <div class="portfolio__meta">
+              <div class="portfolio__meta-row">
+                <h3 class="portfolio__name">OdhadceBeran.cz</h3>
+                <a href="https://odhadceberan.cz/" target="_blank" rel="noopener noreferrer" class="portfolio__link" data-i18n="beran-link">Zobrazit web →</a>
+              </div>
+              <p class="portfolio__desc-short" data-i18n="beran-desc">Web pro certifikovaného odhadce nemovitostí Bc. Davida Berana, MBA. Oceňování rezidenčních i komerčních nemovitostí – pro banky, dědictví, prodej i vypořádání spoluvlastníctví.</p>
+              <div class="portfolio__tags">
+                <span class="portfolio__tag" data-i18n="beran-tag-1">Firemní web</span>
+                <span class="portfolio__tag" data-i18n="beran-tag-2">Oceňování nemovitostí</span>
+                <span class="portfolio__tag" data-i18n="beran-tag-3">Responzivní</span>
+                <span class="portfolio__tag" data-i18n="beran-tag-4">Výzva k akci</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item fade-section">
+            <div class="portfolio__img-wrap">
+              <a href="https://purecrystalsound.com/" target="_blank" rel="noopener noreferrer">
+                <img src="img/puresound.png"
+                     alt="PureCrystalSound.com — screenshot" class="portfolio__img" loading="lazy" />
+              </a>
+              <div class="portfolio__overlay"><span class="portfolio__overlay-tag" data-i18n="puresound-overlay">Wellness &amp; terapie</span></div>
+            </div>
+            <div class="portfolio__meta">
+              <div class="portfolio__meta-row">
+                <h3 class="portfolio__name">PureCrystalSound.com</h3>
+                <a href="https://purecrystalsound.com/" target="_blank" rel="noopener noreferrer" class="portfolio__link" data-i18n="puresound-link">Zobrazit web →</a>
+              </div>
+              <p class="portfolio__desc-short" data-i18n="puresound-desc">Web pro zvukovou terapeutku Michaelu Královou. Zvuková terapie s křišťálovými zpívajícími mísami pro hlubokou relaxaci, harmonizaci mysli, těla i duše.</p>
+              <div class="portfolio__tags">
+                <span class="portfolio__tag" data-i18n="puresound-tag-1">Wellness</span>
+                <span class="portfolio__tag" data-i18n="puresound-tag-2">Zvuková terapie</span>
+                <span class="portfolio__tag" data-i18n="puresound-tag-3">Responzivní</span>
+                <span class="portfolio__tag" data-i18n="puresound-tag-4">Atmosférický design</span>
+              </div>
+            </div>
+          </article>
+
+          <a href="#kontakt" class="portfolio__item portfolio__placeholder fade-section">
+            <div class="portfolio__placeholder-icon" aria-hidden="true">＋</div>
+            <p class="portfolio__placeholder-title" data-i18n="placeholder-title">Objevte se zde i vy</p>
+            <p class="portfolio__placeholder-sub" data-i18n-html="placeholder-sub">Váš web by mohl být<br />součástí naší vitríny</p>
+          </a>
+
+          <a href="#kontakt" class="portfolio__item portfolio__placeholder fade-section">
+            <div class="portfolio__placeholder-icon" aria-hidden="true">＋</div>
+            <p class="portfolio__placeholder-title" data-i18n="placeholder-title">Objevte se zde i vy</p>
+            <p class="portfolio__placeholder-sub" data-i18n-html="placeholder-sub">Váš web by mohl být<br />součástí naší vitríny</p>
+          </a>
+
+          <a href="#kontakt" class="portfolio__item portfolio__placeholder fade-section">
+            <div class="portfolio__placeholder-icon" aria-hidden="true">＋</div>
+            <p class="portfolio__placeholder-title" data-i18n="placeholder-title">Objevte se zde i vy</p>
+            <p class="portfolio__placeholder-sub" data-i18n-html="placeholder-sub">Váš web by mohl být<br />součástí naší vitríny</p>
+          </a>
+
+          <a href="#kontakt" class="portfolio__item portfolio__placeholder fade-section">
+            <div class="portfolio__placeholder-icon" aria-hidden="true">＋</div>
+            <p class="portfolio__placeholder-title" data-i18n="placeholder-title">Objevte se zde i vy</p>
+            <p class="portfolio__placeholder-sub" data-i18n-html="placeholder-sub">Váš web by mohl být<br />součástí naší vitríny</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section kontakt fade-section" id="kontakt">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title" data-i18n="kontakt-title">Jsme tu pro vás</h2>
+        </div>
+        <p class="kontakt__intro" data-i18n="kontakt-intro-1">Át už máte konkrétní představu, nebo jen otázku, dejte nám vědět. Ozveme se co nejdřív a společně vymyslíme, jak z vašich nápadů udělat funkční a moderní web.</p>
+        <p class="kontakt__intro" data-i18n="kontakt-intro-2">Ke každému projektu přistupujeme individuálně — cena se odvíjí od rozsahu a náročnosti. Napište nám a připravíme nabídku přesně na míru vašim potřebám.</p>
+        <p class="kontakt__free" data-i18n="kontakt-free">První konzultace je nezávazná a zdarma.</p>
+        <p class="kontakt__email" data-i18n-html="kontakt-email-html">Napište nám na <a href="mailto:info@pagecraft.cz" class="kontakt__email-link">info@pagecraft.cz</a> nebo vyplnte formulář níže.</p>
+
+        <div class="trust-bar">
+          <div class="trust-item" data-i18n-html="trust-1"><span class="trust-item__icon">✓</span> Nezávazná konzultace zdarma</div>
+          <div class="trust-item" data-i18n-html="trust-2"><span class="trust-item__icon">✓</span> Odpověď do 24 hodin</div>
+          <div class="trust-item" data-i18n-html="trust-3"><span class="trust-item__icon">✓</span> Férové a transparentní ceny</div>
+        </div>
+
+        <div class="kontakt__form-wrap">
+          <div class="kontakt__form-inner">
+            <div class="kontakt__form-row">
+              <div class="form-group">
+                <label for="jmeno" class="form-label" data-i18n="form-label-name">Jméno</label>
+                <input type="text" id="jmeno" name="jmeno" class="form-input" placeholder="Jan" data-i18n-placeholder="form-ph-name" autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="prijmeni" class="form-label" data-i18n="form-label-surname">Příjmení</label>
+                <input type="text" id="prijmeni" name="prijmeni" class="form-input" placeholder="Novák" data-i18n-placeholder="form-ph-surname" autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label" data-i18n="form-label-email">E-mail</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="např. jannovak@email.cz" data-i18n-placeholder="form-ph-email" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="zprava" class="form-label" data-i18n="form-label-message">Zanechte nám zprávu!</label>
+              <textarea id="zprava" name="zprava" class="form-textarea" placeholder="Napište nám, jak byste si představovali váš web nebo jeho revitalizaci. My se vám posléze ozveme." data-i18n-placeholder="form-ph-message" rows="5"></textarea>
+            </div>
+            <button type="button" class="form-submit" id="formSubmit" data-i18n-html="form-submit">
+              Odeslat <span aria-hidden="true">→</span>
+            </button>
+            <p class="form-note" id="formNote" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="favicon.svg" alt="" class="footer__logo-icon" aria-hidden="true" width="22" height="22" />
+            <span>PageCraft<span class="logo-dot">.cz</span></span>
+          </div>
+          <p class="footer__slogan" data-i18n-html="footer-slogan"><em>Tvoříme originální a kreativní weby,<br />které vám zlepší úspěch v podnikání.</em></p>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__contact-title" data-i18n="footer-contact-title">Kontakt</h4>
+          <a href="tel:+420721660883" class="footer__contact-link">+420 721 660 883</a>
+          <a href="tel:+420734351307" class="footer__contact-link">+420 734 351 307</a>
+          <a href="mailto:info@pagecraft.cz" class="footer__contact-link">info@pagecraft.cz</a>
+          <a href="https://www.instagram.com/pagecraft.cz/" target="_blank" rel="noopener noreferrer" class="footer__contact-link footer__contact-link--social">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; pagecraft.cz | 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Souhlas s cookies" aria-live="polite" hidden>
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p>Používáme <strong>cookies</strong> pro zajištění správného fungování webu. Žádná analytika ani sledování třetích stran.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">Přijmout</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline">Odmítnout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "PageCraft.cz",
+    "description": "Tvoříme profesionální webové stránky na míru pro živnostníky a malé firmy. Čistý design, rychlé weby, férové ceny.",
+    "url": "https://pagecraft.cz",
+    "logo": "https://pagecraft.cz/favicon.svg",
+    "image": "https://pagecraft.cz/img/og-image.png",
+    "email": "info@pagecraft.cz",
+    "telephone": ["+420721660883", "+420734351307"],
+    "areaServed": "CZ",
+    "priceRange": "$$",
+    "serviceType": "Tvorba webových stránek",
+    "sameAs": ["https://www.instagram.com/pagecraft.cz/"],
+    "offers": {
+      "@type": "Offer",
+      "name": "Tvorba webových stránek na míru",
+      "description": "Profesionální webové stránky pro živnostníky a malé firmy s individuálním přístupem.",
+      "url": "https://pagecraft.cz/#kontakt"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PageCraft.cz",
+    "url": "https://pagecraft.cz",
+    "description": "Tvorba webových stránek na míru pro živnostníky a malé firmy."
+  }
+  </script>
+
+</body>
+</html>
