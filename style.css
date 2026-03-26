@@ -135,7 +135,7 @@
     .lang-btn {
       background: none;
       border: 1px solid transparent;
-      color: var(--muted);
+      color: #999999;
       font-family: var(--ff-head);
       font-size: 0.72rem;
       font-weight: 700;
@@ -551,7 +551,7 @@
       margin-bottom: 0.7rem;
     }
     .footer__logo-icon { width: 22px; height: 22px; display: block; flex-shrink: 0; }
-    .footer__slogan { font-size: 1rem; color: var(--muted); font-style: italic; line-height: 1.7; }
+    .footer__slogan { font-size: 1rem; color: #aaaaaa; font-style: italic; line-height: 1.7; }
     .footer__contact { display: flex; flex-direction: column; gap: 0.45rem; text-align: right; }
     .footer__contact-title {
       font-family: var(--ff-head);
@@ -564,7 +564,7 @@
     }
     .footer__contact-link {
       font-size: 1rem;
-      color: var(--muted);
+      color: #aaaaaa;
       transition: color 0.2s;
     }
     .footer__contact-link--social {
@@ -578,7 +578,7 @@
       border-top: 1px solid rgba(255,255,255,0.05);
       text-align: center;
     }
-    .footer__copy { font-size: 0.88rem; color: #3a3a3a; letter-spacing: 0.04em; }
+    .footer__copy { font-size: 0.88rem; color: #888888; letter-spacing: 0.04em; }
 
     /* =============================================
        FADE-IN ANIMATIONS
@@ -620,7 +620,7 @@
     .cookie-banner__text {
       flex: 1;
       font-size: 0.85rem;
-      color: var(--muted);
+      color: #aaaaaa;
       line-height: 1.5;
     }
     .cookie-banner__text strong { color: var(--text); }
@@ -648,7 +648,7 @@
     .cookie-banner__btn--accept:hover { background: #ffbe1a; }
     .cookie-banner__btn--decline {
       background: rgba(255,255,255,0.07);
-      color: var(--muted);
+      color: var(--text);
     }
     .cookie-banner__btn--decline:hover { background: rgba(255,255,255,0.13); color: var(--text); }
 
