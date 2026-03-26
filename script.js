@@ -97,11 +97,28 @@
             btn.disabled = false;
           });
       });
+      /* Google Analytics — načítá se pouze po souhlasu s cookies */
+      function loadGA() {
+        if (window._gaLoaded) return;
+        window._gaLoaded = true;
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WDFLN0LZPB';
+        s.async = true;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-WDFLN0LZPB');
+      }
+
       /* Cookie banner */
       (function () {
         var banner = document.getElementById('cookieBanner');
         var consent = localStorage.getItem('cookieConsent');
-        if (!consent) {
+        if (consent === 'accepted') {
+          loadGA();
+        } else if (!consent) {
           banner.hidden = false;
           setTimeout(function () { banner.classList.add('cookie-banner--visible'); }, 50);
         }
@@ -109,6 +126,7 @@
           banner.classList.remove('cookie-banner--visible');
           localStorage.setItem('cookieConsent', value);
           setTimeout(function () { banner.hidden = true; }, 400);
+          if (value === 'accepted') { loadGA(); }
         }
         document.getElementById('cookieAccept').addEventListener('click', function () { dismiss('accepted'); });
         document.getElementById('cookieDecline').addEventListener('click', function () { dismiss('declined'); });

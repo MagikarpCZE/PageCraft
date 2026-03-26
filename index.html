@@ -29,19 +29,12 @@
   <meta name="twitter:description" content="Tvoříme profesionální webové stránky na míru pro živnostníky a malé firmy." />
   <meta name="twitter:image" content="https://pagecraft.cz/img/og-image.png" />
 
-  <!-- ===================== Google Analytics ===================== -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDFLN0LZPB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WDFLN0LZPB');
-  </script>
-
   <!-- ===================== Výkon ===================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <!-- Fonts načteny asynchronně — neblokují render -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" /></noscript>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -241,8 +234,10 @@
           <article class="portfolio__item fade-section">
             <div class="portfolio__img-wrap">
               <a href="https://odhadceberan.cz/" target="_blank" rel="noopener noreferrer">
-                <img src="img/beran.png"
-                     alt="OdhadceBeran.cz — screenshot" class="portfolio__img" loading="lazy" />
+                <picture>
+                  <source srcset="img/beran.webp" type="image/webp" />
+                  <img src="img/beran.png" alt="OdhadceBeran.cz — screenshot" class="portfolio__img" loading="lazy" />
+                </picture>
               </a>
               <div class="portfolio__overlay"><span class="portfolio__overlay-tag" data-i18n="beran-overlay">Firemní web</span></div>
             </div>
@@ -264,8 +259,10 @@
           <article class="portfolio__item fade-section">
             <div class="portfolio__img-wrap">
               <a href="https://purecrystalsound.com/" target="_blank" rel="noopener noreferrer">
-                <img src="img/puresound.png"
-                     alt="PureCrystalSound.com — screenshot" class="portfolio__img" loading="lazy" />
+                <picture>
+                  <source srcset="img/puresound.webp" type="image/webp" />
+                  <img src="img/puresound.png" alt="PureCrystalSound.com — screenshot" class="portfolio__img" loading="lazy" />
+                </picture>
               </a>
               <div class="portfolio__overlay"><span class="portfolio__overlay-tag" data-i18n="puresound-overlay">Wellness &amp; terapie</span></div>
             </div>
@@ -401,7 +398,7 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
